@@ -1,0 +1,238 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 18.15     41.15    41.15                             comp_distance (fitness.c:14 @ 400e3a)
+ 13.71     72.24    31.09                             comp_distance (fitness.c:10 @ 400e3e)
+  8.75     92.09    19.85                             comp_distance (fitness.c:10 @ 400df8)
+  6.78    107.46    15.38                             recombine (crossover.c:21 @ 401347)
+  5.55    120.05    12.58                             recombine (crossover.c:15 @ 4012ed)
+  4.72    130.75    10.70                             comp_distance (fitness.c:13 @ 400e0a)
+  4.61    141.19    10.45                             comp_distance (fitness.c:13 @ 400e16)
+  4.54    151.49    10.30                             comp_distance (fitness.c:10 @ 400e22)
+  4.54    161.79    10.30                             comp_distance (fitness.c:14 @ 400e11)
+  4.53    172.06    10.27                             comp_distance (fitness.c:12 @ 400e03)
+  4.50    182.26    10.20                             comp_distance (fitness.c:13 @ 400e36)
+  4.47    192.40    10.14                             comp_distance (fitness.c:10 @ 400e2f)
+  4.44    202.48    10.07                             comp_distance (fitness.c:14 @ 400e1d)
+  4.41    212.47     9.99                             comp_distance (fitness.c:14 @ 400e2a)
+  1.76    216.45     3.98                             recombine (crossover.c:20 @ 401330)
+  1.31    219.41     2.96                             recombine (crossover.c:14 @ 4012dc)
+  0.62    220.82     1.41                             comp_distance (fitness.c:10 @ 400dde)
+  0.50    221.96     1.13                             recombine (crossover.c:5 @ 401316)
+  0.47    223.01     1.06                             recombine (crossover.c:13 @ 401305)
+  0.46    224.06     1.05                             recombine (crossover.c:14 @ 4012d3)
+  0.35    224.86     0.80                             recombine (crossover.c:13 @ 4012d9)
+  0.33    225.61     0.75                             recombine (crossover.c:13 @ 4012cd)
+  0.15    225.96     0.35                             comp_distance (fitness.c:14 @ 400e32)
+  0.13    226.25     0.29                             comp_distance (fitness.c:12 @ 400e26)
+  0.12    226.52     0.28                             comp_distance (fitness.c:13 @ 400dfe)
+  0.11    226.78     0.26                             comp_distance (fitness.c:12 @ 400dfc)
+  0.07    226.94     0.16                             comp_distance (fitness.c:12 @ 400df0)
+  0.04    227.03     0.10                             mutate (mutate.c:19 @ 40145d)
+  0.03    227.10     0.07                             mutate (mutate.c:18 @ 401430)
+  0.02    227.16     0.06                             mutate (mutate.c:20 @ 40147e)
+  0.02    227.20     0.04                             comp_distance (fitness.c:17 @ 400e40)
+  0.00    227.21     0.01                             generate_random_image (population.c:13 @ 400f24)
+  0.00    227.22     0.01                             generate_random_image (population.c:14 @ 400f35)
+  0.00    227.23     0.01                             mutate (mutate.c:11 @ 40142c)
+  0.00    227.24     0.01                             recombine (crossover.c:19 @ 401363)
+  0.00    227.25     0.01                             split (evolve.c:18 @ 40104f)
+  0.00    227.26     0.01                             split (evolve.c:17 @ 40105e)
+  0.00    227.27     0.01                             split (evolve.c:23 @ 4010ad)
+  0.00    227.27     0.01                             evolve_image (evolve.c:51 @ 401201)
+  0.00    227.28     0.01                             evolve_image (evolve.c:52 @ 401210)
+  0.00    227.28     0.00  1250025     0.00     0.00  quicksort (evolve.c:30 @ 400ff0)
+  0.00    227.28     0.00  1200024     0.00     0.00  comp_distance (fitness.c:7 @ 400dd0)
+  0.00    227.28     0.00   900000     0.00     0.00  mutate (mutate.c:7 @ 4013e0)
+  0.00    227.28     0.00   300000     0.00     0.00  recombine (crossover.c:5 @ 401290)
+  0.00    227.28     0.00    50001     0.00     0.00  comp_fitness_population (fitness.c:21 @ 400e60)
+  0.00    227.28     0.00    50000     0.00     0.00  crossover (crossover.c:25 @ 401380)
+  0.00    227.28     0.00    50000     0.00     0.00  mutate_population (mutate.c:26 @ 4014c0)
+  0.00    227.28     0.00       24     0.00     0.00  generate_random_image (population.c:7 @ 400ed0)
+  0.00    227.28     0.00        2     0.00     0.00  free_image (evolve.c:67 @ 401130)
+  0.00    227.28     0.00        1     0.00     0.00  evolve_image (evolve.c:38 @ 401160)
+  0.00    227.28     0.00        1     0.00     0.00  generate_population (population.c:19 @ 400f70)
+  0.00    227.28     0.00        1     0.00     0.00  read_ppm (readwriteppm.c:7 @ 400cc0)
+  0.00    227.28     0.00        1     0.00     0.00  write_ppm (readwriteppm.c:33 @ 400be0)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.00% of 227.28 seconds
+
+index % time    self  children    called     name
+                0.00    0.00       1/1250025     evolve_image (evolve.c:45 @ 4011cd) [94]
+                0.00    0.00   50000/1250025     evolve_image (evolve.c:52 @ 401210) [40]
+                0.00    0.00 1200024/1250025     quicksort (evolve.c:31 @ 401110) [189]
+[41]     0.0    0.00    0.00 1250025         quicksort (evolve.c:30 @ 400ff0) [41]
+-----------------------------------------------
+                0.00    0.00 1200024/1200024     comp_fitness_population (fitness.c:25 @ 400e9d) [72]
+[42]     0.0    0.00    0.00 1200024         comp_distance (fitness.c:7 @ 400dd0) [42]
+-----------------------------------------------
+                0.00    0.00  900000/900000      mutate_population (mutate.c:29 @ 401502) [178]
+[43]     0.0    0.00    0.00  900000         mutate (mutate.c:7 @ 4013e0) [43]
+-----------------------------------------------
+                0.00    0.00  300000/300000      crossover (crossover.c:30 @ 4013b2) [77]
+[44]     0.0    0.00    0.00  300000         recombine (crossover.c:5 @ 401290) [44]
+-----------------------------------------------
+                0.00    0.00       1/50001       evolve_image (evolve.c:43 @ 4011bf) [92]
+                0.00    0.00   50000/50001       evolve_image (evolve.c:52 @ 401210) [40]
+[45]     0.0    0.00    0.00   50001         comp_fitness_population (fitness.c:21 @ 400e60) [45]
+-----------------------------------------------
+                0.00    0.00   50000/50000       evolve_image (evolve.c:49 @ 4011ec) [98]
+[46]     0.0    0.00    0.00   50000         crossover (crossover.c:25 @ 401380) [46]
+-----------------------------------------------
+                0.00    0.00   50000/50000       evolve_image (evolve.c:50 @ 4011f1) [99]
+[47]     0.0    0.00    0.00   50000         mutate_population (mutate.c:26 @ 4014c0) [47]
+-----------------------------------------------
+                0.00    0.00      24/24          generate_population (population.c:27 @ 400fbe) [129]
+[48]     0.0    0.00    0.00      24         generate_random_image (population.c:7 @ 400ed0) [48]
+-----------------------------------------------
+                0.00    0.00       2/2           main (main.c:33 @ 400bbc) [162]
+[49]     0.0    0.00    0.00       2         free_image (evolve.c:67 @ 401130) [49]
+-----------------------------------------------
+                0.00    0.00       1/1           main (main.c:28 @ 400b96) [158]
+[50]     0.0    0.00    0.00       1         evolve_image (evolve.c:38 @ 401160) [50]
+-----------------------------------------------
+                0.00    0.00       1/1           evolve_image (evolve.c:43 @ 4011a0) [88]
+[51]     0.0    0.00    0.00       1         generate_population (population.c:19 @ 400f70) [51]
+-----------------------------------------------
+                0.00    0.00       1/1           main (main.c:22 @ 400b4f) [154]
+[52]     0.0    0.00    0.00       1         read_ppm (readwriteppm.c:7 @ 400cc0) [52]
+-----------------------------------------------
+                0.00    0.00       1/1           main (main.c:31 @ 400bad) [159]
+[53]     0.0    0.00    0.00       1         write_ppm (readwriteppm.c:33 @ 400be0) [53]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [42] comp_distance (fitness.c:7 @ 400dd0) [2] comp_distance (fitness.c:10 @ 400e3e) [41] quicksort (evolve.c:30 @ 400ff0)
+  [17] comp_distance (fitness.c:10 @ 400dde) [31] comp_distance (fitness.c:17 @ 400e40) [52] read_ppm (readwriteppm.c:7 @ 400cc0)
+  [27] comp_distance (fitness.c:12 @ 400df0) [45] comp_fitness_population (fitness.c:21 @ 400e60) [44] recombine (crossover.c:5 @ 401290)
+   [3] comp_distance (fitness.c:10 @ 400df8) [46] crossover (crossover.c:25 @ 401380) [22] recombine (crossover.c:13 @ 4012cd)
+  [26] comp_distance (fitness.c:12 @ 400dfc) [50] evolve_image (evolve.c:38 @ 401160) [20] recombine (crossover.c:14 @ 4012d3)
+  [25] comp_distance (fitness.c:13 @ 400dfe) [39] evolve_image (evolve.c:51 @ 401201) [21] recombine (crossover.c:13 @ 4012d9)
+  [10] comp_distance (fitness.c:12 @ 400e03) [40] evolve_image (evolve.c:52 @ 401210) [16] recombine (crossover.c:14 @ 4012dc)
+   [6] comp_distance (fitness.c:13 @ 400e0a) [49] free_image (evolve.c:67 @ 401130) [5] recombine (crossover.c:15 @ 4012ed)
+   [9] comp_distance (fitness.c:14 @ 400e11) [51] generate_population (population.c:19 @ 400f70) [19] recombine (crossover.c:13 @ 401305)
+   [7] comp_distance (fitness.c:13 @ 400e16) [48] generate_random_image (population.c:7 @ 400ed0) [18] recombine (crossover.c:5 @ 401316)
+  [13] comp_distance (fitness.c:14 @ 400e1d) [32] generate_random_image (population.c:13 @ 400f24) [15] recombine (crossover.c:20 @ 401330)
+   [8] comp_distance (fitness.c:10 @ 400e22) [33] generate_random_image (population.c:14 @ 400f35) [4] recombine (crossover.c:21 @ 401347)
+  [24] comp_distance (fitness.c:12 @ 400e26) [43] mutate (mutate.c:7 @ 4013e0) [35] recombine (crossover.c:19 @ 401363)
+  [14] comp_distance (fitness.c:14 @ 400e2a) [34] mutate (mutate.c:11 @ 40142c) [36] split (evolve.c:18 @ 40104f)
+  [12] comp_distance (fitness.c:10 @ 400e2f) [29] mutate (mutate.c:18 @ 401430) [37] split (evolve.c:17 @ 40105e)
+  [23] comp_distance (fitness.c:14 @ 400e32) [28] mutate (mutate.c:19 @ 40145d) [38] split (evolve.c:23 @ 4010ad)
+  [11] comp_distance (fitness.c:13 @ 400e36) [30] mutate (mutate.c:20 @ 40147e) [53] write_ppm (readwriteppm.c:33 @ 400be0)
+   [1] comp_distance (fitness.c:14 @ 400e3a) [47] mutate_population (mutate.c:26 @ 4014c0)

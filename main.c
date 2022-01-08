@@ -29,9 +29,10 @@ int main(int argc, char **argv) {
 
   // Write image
   write_ppm(output_file, new_image);
-  // Free memory
-  free_image(goal);
-  free_image(new_image);
+  
+  // // Free memory
+  // free_image(goal);
+  // free_image(new_image);
 
   return (0);
 }

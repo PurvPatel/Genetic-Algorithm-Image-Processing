@@ -8,7 +8,7 @@ There are also addition image files for testing purposes as well as some addtiti
 ## Example
 
 ### Target
-![](test_images/results/jpgs/me2.jpg)
+![](test_images/src/jpgs/me.jpg)
 
 ### Image Reconstruction
 ![](test_images/results/gifs/me_gif.gif)
